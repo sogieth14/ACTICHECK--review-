@@ -24,7 +24,7 @@ Examples: email:"you@example.com", x:"@yourhandle", wa:"+234XXXXXXXXXX"
 
        var SUBMIT_URL="";
 
-Until SUBMIT_URL is set, the send button only shows the thank-you screen and nothing reaches you. Do not share the page with doctors before this is done.
+SUBMIT_URL is already set to your Worker. If you ever move the Worker, update it here.
 
 ## 4. Test it
 Open the live page, fill in a few answers, press Send, and check that the message arrives in Telegram. Then share the link.

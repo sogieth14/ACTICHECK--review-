@@ -166,7 +166,7 @@ var AREAS=["Fever and infection","Breathing","Back and bones","Belly","Heart and
 function pickv(){var k=Object.keys(A.doc.areas||{}).filter(function(x){return A.doc.areas[x]});var r=CONDS.filter(function(c){return k.indexOf(c.cat)>-1});return r.length?r:CONDS}/* intro, conditions, add new, finish */
 var CONTACT={email:"",phone:"",x:"",ig:"",wa:""};/* sample values, replace with the real ones */
 var APP_URL="https://sogieth14.github.io/ACTICHECK-/index.html";/* the live ActiCheck app link */
-var SUBMIT_URL="";/* your Cloudflare Worker address that forwards answers to Telegram. Empty = preview mode, nothing is sent */
+var SUBMIT_URL="https://acticheckreview.actichecksupport.workers.dev";/* your Cloudflare Worker address that forwards answers to Telegram. Empty = preview mode, nothing is sent */
 var $=function(i){return document.getElementById(i)};
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]})}
 function seg(opts,cur,attr,extra){return '<div class="seg">'+opts.map(function(o){return '<button type="button" class="'+(cur===o?"on ":"")+(extra&&extra[o]||"")+'" '+attr+'="'+esc(o)+'">'+esc(o)+'</button>'}).join("")+'</div>'}
